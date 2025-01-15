@@ -1,0 +1,4 @@
+name: Database
+version: '${project.version}'
+main: org.archibald.database.Main
+api-version: '1.21'
