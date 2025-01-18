@@ -4,13 +4,9 @@ import org.archibald.database.listeners.PlayersListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class ListenersHandler {
-    private JavaPlugin plugin;
-
-    public ListenersHandler() {
-        this.plugin = Plugin.getPlugin();
-    }
+    public static final JavaPlugin PLUGIN = Plugin.getPlugin();
 
     public void registerListeners() {
-        plugin.getServer().getPluginManager().registerEvents(new PlayersListener(), plugin);
+        PLUGIN.getServer().getPluginManager().registerEvents(new PlayersListener(), PLUGIN);
     }
 }

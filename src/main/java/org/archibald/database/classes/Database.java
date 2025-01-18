@@ -1,7 +1,6 @@
 package org.archibald.database.classes;
 
 public abstract class Database {
-
     private final String dbName = "minecraft";
 
     public Database() {
